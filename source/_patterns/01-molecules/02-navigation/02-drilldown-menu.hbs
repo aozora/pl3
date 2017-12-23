@@ -1,0 +1,23 @@
+<ul class="vertical menu" data-drilldown>
+  {{# drilldownMenu }}
+  <li>
+    <a href="{{ url }}">{{ text }}</a>
+    {{# drilldownSubmenu }}
+    <ul class="vertical menu">
+	  {{# drilldownSubmenuList }}
+      <li>
+        <a href="{{ url }}">{{ text }}</a>
+        {{# drilldownSubSubmenu}}
+        <ul class="vertical menu">
+	      {{# drilldownSubSubmenuList }}
+          <li><a href="{{ url }}">{{ text }}</a></li>
+          {{/ drilldownSubSubmenuList }}
+        </ul>
+        {{/ drilldownSubSubmenu}}
+      </li>
+      {{/ drilldownSubmenuList }}
+    </ul>
+    {{/ drilldownSubmenu}}
+  </li>
+  {{/ drilldownMenu}}
+</ul>

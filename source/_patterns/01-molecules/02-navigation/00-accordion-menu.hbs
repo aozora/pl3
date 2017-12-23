@@ -1,0 +1,22 @@
+{{# accordionMenu }}
+<ul class="vertical menu" data-accordion-menu>
+  {{# listItem }}
+  <li>
+    <a href="#">{{ text }}</a>
+    <ul class="menu vertical nested">
+	  {{# listItemNested }}
+      <li>
+        <a href="#">{{ text }}</a>
+        <ul class="menu vertical nested">
+	      {{# listItemNestedSublist }}
+          <li><a href="#">{{ text }}</a></li>
+          {{/ listItemNestedSublist }}
+        </ul>
+      </li>
+      {{/ listItemNested}}
+    </ul>
+  </li>
+  {{/ listItem }}
+</ul>
+{{/ accordionMenu }}
+

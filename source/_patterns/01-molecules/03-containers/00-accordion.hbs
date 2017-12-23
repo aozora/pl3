@@ -1,0 +1,13 @@
+
+<ul class="accordion" data-accordion role="tablist">
+  {{# accordionList }}
+  <li class="accordion-item {{ activeClass }}">
+    <!-- The tab title needs role="tab", an href, a unique ID, and aria-controls. -->
+    <a href="{{ panelUrl }}" role="tab" class="accordion-title" aria-controls="panel1d">{{ accordionHeading }}</a>
+    <!-- The content pane needs an ID that matches the above href, role="tabpanel", data-tab-content, and aria-labelledby. -->
+    <div  class="accordion-content" role="tabpanel" data-tab-content aria-labelledby="panel1d-heading">
+      {{ text }}
+    </div>
+  </li>
+  {{/ accordionList }}
+</ul>

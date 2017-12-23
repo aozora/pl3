@@ -1,0 +1,15 @@
+{
+  "name": "pl3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "patternlab": "node patternlab.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@pattern-lab/patternlab-node": "^3.0.0-alpha.5",
+    "patternengine-node-handlebars": "^1.0.3"
+  }
+}

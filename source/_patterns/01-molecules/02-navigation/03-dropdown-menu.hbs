@@ -1,0 +1,25 @@
+<ul class="dropdown menu" data-dropdown-menu>
+  {{# listItem }}
+  <li>
+    <a href="{{ url }}">{{ text }}</a>
+    {{# dropdownNested }}
+    <ul class="menu">
+	  {{# nestedListItem}}
+      <li>
+        <a href='{{ url }}'> {{ text }}</a>
+        {{# dropdownNestedSublist }}
+        <ul class='menu'>
+	      {{# nestedSublistItem }}
+          <li>
+            <a href='{{ url }}'> {{ text }}</a>
+          </li>
+          {{/ nestedSublistItem }}
+        </ul>
+        {{/ dropdownNestedSublist }}
+      </li>
+	  {{/ nestedListItem}}
+    </ul>
+    {{/ dropdownNested }}
+  </li>
+  {{/ listItem }}
+</ul>

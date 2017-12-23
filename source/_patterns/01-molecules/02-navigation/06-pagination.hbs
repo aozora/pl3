@@ -1,0 +1,5 @@
+<ul class="pagination" role="navigation" aria-label="Pagination">
+  {{# paginationListItem }}
+  <li {{# paginationDisabled }}class="disabled"{{/ paginationDisabled }}{{# classCurrent }}class="current"{{/ classCurrent }}>{{# hasUrl }}<a href="{{ url }}" aria-label="Next page">{{/ hasUrl }}{{# classCurrent }}<span class="show-for-sr">{{ paginationCurrent }}</span>{{/ classCurrent }}{{ text }}{{# hasUrl }}</a>{{/ hasUrl }}</li>
+  {{/ paginationListItem }}
+</ul>

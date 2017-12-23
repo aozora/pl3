@@ -1,0 +1,15 @@
+<ul class="tabs" data-tabs id="example-tabs">
+  {{# tabsList }}
+  <li class="tabs-title {{ activeClass }}"><a href="{{ href }}" aria-selected="true">{{ text }}</a></li>
+  {{/ tabsList }}
+</ul>
+
+<div class="tabs-content" data-tabs-content="example-tabs">
+  {{# tabsPanel }}
+  <div class="tabs-panel {{ activeClass }}" id="{{ id }}">
+    <p>{{ number }}</p>
+    {{# hasCaption }}<p>{{ text }}</p> {{/ hasCaption }}
+    {{# hasImage }}<img class="thumbnail" src="{{ src }}"> {{/ hasImage }}
+  </div>
+  {{/ tabsPanel }}
+</div>
