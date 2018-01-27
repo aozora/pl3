@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@pattern-lab/patternlab-node": "^3.0.0-alpha.6",
+    "@pattern-lab/patternlab-node": "^3.0.0-alpha.7",
     "fs-extra": "^5.0.0",
     "patternengine-node-handlebars": "^1.0.3"
   }
